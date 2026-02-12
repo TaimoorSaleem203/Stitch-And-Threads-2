@@ -4,7 +4,7 @@ const TopBar = () => {
     return (
         <div className="bg-primary tracking-wide text-white p-2 flex justify-center items-center">
             <i class="ri-arrow-left-s-line -translate-x-10"></i>
-            Free shipping on US orders $100+ & Free exchanges
+            <span className="text-sm text-center sm:max-w-full sm:text-[16px]">Free shipping on US orders $100+ & Free exchanges</span>
             <i class="ri-arrow-right-s-line translate-x-10"></i>
         </div>
     )
@@ -12,14 +12,14 @@ const TopBar = () => {
 
 const MainNav = () => {
     return (
-        <nav className="relative w-full bg-white mx-auto flex items-center justify-between p-6 px-14">
-            <h1 className="text-text text-xl sm:text-2xl font-extrabold cursor-pointer">STICH & THREADS</h1>
+        <nav className="relative w-full bg-white mx-auto flex items-center justify-between p-6 px-16">
+            <h1 className="text-text text-xl lg:text-2xl font-extrabold cursor-pointer">STICH & THREADS</h1>
 
             <ul className="hidden md:flex items-center gap-6 uppercase font-medium tracking-wider">
                 {['Home', 'About', 'Services', 'Portfolio', 'Contact Us', 'Get a Quote'].map((item, key) => {
                     return (
                         <li key={key} className="flex items-center gap-1">
-                            <a href="#" className="hover:text-primary">{item}</a>
+                            <a href="#" className="hover:text-primary px-1">{item}</a>
                             {item == "Services" && <i className="ri-arrow-down-s-line cursor-pointer"></i>}
                         </li>
                     )
