@@ -3,9 +3,9 @@ import { useState } from "react"
 const TopBar = () => {
     return (
         <div className="bg-primary tracking-wide text-white p-2 flex justify-center items-center">
-            <i class="hidden sm:visible ri-arrow-left-s-line -translate-x-10"></i>
+            <i class="hidden md:block ri-arrow-left-s-line -translate-x-10"></i>
             <span className="text-sm text-center sm:max-w-full sm:text-[16px]">Free shipping on US orders $100+ & Free exchanges</span>
-            <i class="hidden sm:visible ri-arrow-right-s-line translate-x-10"></i>
+            <i class="hidden md:block ri-arrow-right-s-line translate-x-10"></i>
         </div>
     )
 }
@@ -13,7 +13,7 @@ const TopBar = () => {
 const MainNav = () => {
     return (
         <nav className="relative w-full bg-white mx-auto flex items-center justify-between p-6 px-16">
-            <h1 className="text-text text-xl md:text-2xl font-extrabold cursor-pointer">STICH & THREADS</h1>
+            <h1 className="text-text text-2xl font-extrabold cursor-pointer">STICH & THREADS</h1>
 
             <ul className="hidden md:flex items-center gap-6 uppercase font-medium tracking-wider">
                 {['Home', 'About', 'Services', 'Portfolio', 'Contact Us', 'Get a Quote'].map((item, key) => {
@@ -58,9 +58,9 @@ const SideBar = () => {
                 })}
             </ul>
 
-            <div className="flex items-center gap-4 text-2xl absolute bottom-0">
-                <button aria-label="Facebook"><i class="ri-facebook-circle-fill cursor-pointer"></i></button>
-                <button aria-lablel="Instagram"><i class="ri-instagram-fill cursor-pointer"></i></button>
+            <div className="flex items-center gap-4 text-2xl absolute bottom-0 transition-all duration-300 ease">
+                <button aria-label="Facebook" className="hover:text-primary"><i class="ri-facebook-circle-fill cursor-pointer"></i></button>
+                <button aria-lablel="Instagram" className="hover:text-primary"><i class="ri-instagram-fill cursor-pointer"></i></button>
                 <span className="border-l-2 border-y-slate-200 h-12"></span><i className="ri-search-line cursor-pointer"></i>
             </div>
 

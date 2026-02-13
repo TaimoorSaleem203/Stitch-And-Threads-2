@@ -2,7 +2,7 @@ import AboutImg from "../assets/AboutUs.png"
 
 const TopHeader = () => {
   return (
-    <section className='max-w-max mx-auto grid grid-cols-1 mt-36 px-6 xl:px-80'>
+    <section className='max-w-full mx-auto grid grid-cols-1 mt-36 px-6 xl:px-80'>
       <div className='flex flex-col gap-8 items-center text-center'>
         <h1 className='font-heading uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-primary'>Turning Your Designs Into
           Production-<span className='text-black'>Ready Masterpieces</span></h1>
