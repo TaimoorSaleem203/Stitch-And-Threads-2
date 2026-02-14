@@ -3,7 +3,7 @@ const Quotes = () => {
   return (
     <section className='mt-36 overflow-x-hidden'>
         <div className='max-w-4xl mx-auto flex flex-col gap-8 items-center text-center p-12'>
-            <h1 className='max-w-prose uppercase font-heading text-black text-3xl lg:text-4xl font-bold'>“I’ve tried many services, but this team actually understands production requirements. The quality shows in every stitch.”</h1>
+            <h1 className='max-w-prose uppercase font-heading text-black text-2xl md:text-3xl lg:text-4xl font-bold mx-auto leading-relaxed'>“I’ve tried many services, but this team actually understands production requirements. The quality shows in every stitch.”</h1>
             <p className="text-text font-body uppercase text-lg md:text-xl">Michael Torres</p>
 
             <div className="flex justify-center items-center gap-5">
