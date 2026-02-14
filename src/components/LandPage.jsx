@@ -13,8 +13,10 @@ const LandPage = () => {
 
         <form action="" className="mx-auto bg-white border-2 p-6 lg:p-8 rounded-lg shadow-sm font-body font-medium flex flex-col gap-6">
           <h1 className="text-3xl md:text-4xl font-heading uppercase font-bold text-primary text-center">Get Best Price</h1>
+          
           <input type="text" placeholder="Name" className="border outline-none focus:ring-1 focus:ring-primary border-gray-400 rounded-lg p-2" />
           <input type="text" placeholder="Email" className="border outline-none focus:ring-1 focus:ring-primary border-gray-400 rounded-lg p-2" />
+          
           <div className="grid grid-cols-2 gap-4">
             <input type="text" placeholder="Phone" className="border outline-none focus:ring-1 focus:ring-primary border-gray-400 rounded-lg p-2" />
             <input type="text" placeholder="Quantity" className="border outline-none focus:ring-1 focus:ring-primary border-gray-400 rounded-lg p-2" />

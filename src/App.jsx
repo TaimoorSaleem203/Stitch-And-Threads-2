@@ -1,20 +1,21 @@
-import Navbar from "./components/Navbar"
-import LandPage from "./components/LandPage"
-import AboutUs from "./components/AboutUs"
-import Services from "./components/Services"
-import Portfolio from "./components/Portfolio"
+import Navbar from "./components/Navbar.jsx"
+import LandPage from "./components/LandPage.jsx"
+import AboutUs from "./components/AboutUs.jsx"
+import Services from "./components/Services.jsx"
+import Portfolio from "./components/Portfolio.jsx"
+import Quotes from "./components/Quotes.jsx"
 
 const App = () => {
   return (
     <>
 
-    <section className="overflow-hidden">
       <Navbar />
       <LandPage />
       <AboutUs />
       <Services />
       <Portfolio />
-    </section>
+      <Quotes /> 
+
     </>
   )
 }

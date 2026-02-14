@@ -51,7 +51,7 @@ const SideBar = () => {
                 {['Home', 'About', 'Services', 'Portfolio', 'Contact Us', 'Get a Quote'].map((item, key) => {
                     return (
                         <li key={key} className="flex items-center gap-1">
-                            <a href="#" className="hover:text-primary">{item}</a>
+                            <a href={`#${item}`} className="hover:text-primary">{item}</a>
                             {item == "Services" && <i className="ri-arrow-down-s-line cursor-pointer"></i>}
                         </li>
                     )
@@ -76,7 +76,6 @@ const Navbar = () => {
             <header className="relative w-screen font-body mx-auto">
                 <TopBar />
                 <MainNav />
-                
             </header>
         </>
     )
