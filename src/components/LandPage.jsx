@@ -1,14 +1,23 @@
-import LandImg from "../assets/LandPageImg.png"
+import LandImg2 from "../assets/LandPageImg2.png"
+import LandImg3 from "../assets/LandPageImg3.png"
+import LandImg4 from "../assets/LandPageImg4.png"
 
 const LandPage = () => {
   return (
     <main className='w-full py-16 p-6 md:p-8 lg:p-12 bg-secondary' id={`home`}>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-12 lg:gap-14 lg:grid-cols-2 justify-center">
-        <div className="flex flex-col gap-8 mx-auto items-center justify-center">
-          <h1 className="flex flex-col gap-2 text-center text-primary uppercase tracking-normal text-4xl md:text-5xl lg:text-6xl font-heading font-semibold">High-Quality
-            <br /><span className="text-black block"> Embroidery & Patches,</span> Done Your Way</h1>
-          <img src={LandImg} alt="landImg" className="h-auto object-contain w-full" />
+      <div className="text-center max-w-7xl mx-auto grid grid-cols-1 gap-12 lg:gap-14 lg:grid-cols-2 justify-center">
+        <div className="flex flex-col gap-5 mx-auto items-center justify-center">
+          <h1 className="text-primary uppercase tracking-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-semibold">Embroider<span className="text-black"> Digitizing</span></h1>
+          <p className="max-w-md font-body font-semibold md:text-md md:text-lg text-text leading-normal">We convert your artwork into clean, stitch-ready embroidery files with accuracy, balance, and flawless detailing.</p>
+
+          <div className="mt-5 grid items-center gap-5 grid-cols-2">
+            <img src={LandImg2} className="rounded-lg max-w-md w-full h-full object-cover mx-auto" alt="" />
+            <div className="flex flex-col gap-5">
+              <img src={LandImg3} className="w-full h-full mx-auto object-cover" alt="" />
+              <img src={LandImg4} className="w-full h-full mx-auto object-cover" alt="" />
+            </div>
+          </div>
         </div>
 
         <form action="" className="mx-auto bg-white border-2 p-6 lg:p-8 rounded-lg shadow-sm font-body font-medium flex flex-col gap-6">
