@@ -19,7 +19,7 @@ const Img = ({ src }) => {
 
 const ContactUs = () => {
   return (
-    <section className="mt-28 bg-white">
+    <section className="mt-28 bg-white" id="contact%20us">
       <div className="max-w-7xl mx-auto p-6 md:p-10 lg:p-12">
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4">
           

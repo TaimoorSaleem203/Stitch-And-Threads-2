@@ -1,7 +1,7 @@
 
 const Quotes = () => {
   return (
-    <section className='mt-36 overflow-x-hidden bg-white'>
+    <section className='mt-36 bg-white' id="get%20a%20quote">
       <div className='max-w-4xl mx-auto flex flex-col gap-10 items-center text-center p-12'>
         
         {/* Decorative Quote Icon */}

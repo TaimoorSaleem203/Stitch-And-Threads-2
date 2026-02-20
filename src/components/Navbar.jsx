@@ -14,13 +14,13 @@ const TopBar = () => {
 const MainNav = () => {
     return (
         <nav className="relative w-full bg-white mx-auto flex items-center justify-between p-6 px-16">
-            <h1 className="text-text text-xl md:text-2xl font-extrabold cursor-pointer">STITCH <span className="text-primary font-semibold">&</span> THREADS</h1>
+            <a href={`#home`} className="text-text text-xl md:text-2xl font-extrabold cursor-pointer">STITCH <span className="text-primary font-semibold">&</span> THREADS</a>
 
             <ul className="hidden md:flex items-center gap-6 uppercase font-medium tracking-wider">
                 {['Home', 'About', 'Services', 'Portfolio', 'Contact Us', 'Get a Quote'].map((item, key) => {
                     return (
                         <li key={key} className="flex items-center gap-1">
-                            <a href="#" className="hover:text-primary px-1 text-[16px]">{item}</a>
+                            <a href={`#${item.toLowerCase()}`} className="hover:text-primary px-1 text-[16px]">{item}</a>
                             {item == "Services" && <i className="ri-arrow-down-s-line cursor-pointer"></i>}
                         </li>
                     )
@@ -48,7 +48,7 @@ const SideBar = () => {
     return (
         <>
             <i onClick={() => setIsSide(!isSide)} className={`${isSide ? "ri-close-line hidden" : "ri-menu-line"} block md:hidden font-bold text-xl cursor-pointer`}></i>
-            <aside className={`md:hidden bg-white z-10 p-10 fixed inset-0 drop-shadow-md h-screen max-w-[300px] transition-all duration-300 ease-in-out ${isSide ? "translate-x-0" : "-translate-x-80"}`}>
+            <aside className={`md:hidden bg-white z-20 p-10 fixed inset-0 drop-shadow-md h-full max-w-[300px] transition-transform duration-300 ease-in-out ${isSide ? "translate-x-0" : "-translate-x-80"}`}>
                 <div className="flex items-center justify-between">
                     <h1 className="text-text text-xl font-extrabold cursor-pointer">STICH <span className="text-primary font-semibold">&</span> THREADS</h1>
                     <i onClick={() => setIsSide(!isSide)} className={`ri-close-line block md:hidden font-bold text-2xl cursor-pointer`}></i>
@@ -58,14 +58,14 @@ const SideBar = () => {
                     {['Home', 'About', 'Services', 'Portfolio', 'Contact Us', 'Get a Quote'].map((item, key) => {
                         return (
                             <li key={key} className="flex items-center gap-1">
-                                <a href={`#${item}`} className="hover:text-primary">{item}</a>
+                                <a href={`#${item.toLowerCase()}`} className="hover:text-primary">{item}</a>
                                 {item == "Services" && <i className="ri-arrow-down-s-line cursor-pointer"></i>}
                             </li>
                         )
                     })}
                 </ul>
 
-                <div className="flex items-center gap-4 text-2xl absolute bottom-0 transition-all duration-300 ease">
+                <div className="flex mb-3 items-center gap-4 text-2xl absolute bottom-0 transition-all duration-300 ease">
                    {/* <i className="ri-search-line cursor-pointer hover:text-primary transition-all"></i> */}
                     {/* <div className="w-[1px] h-6 bg-slate-200"></div> */}
                     <i className="ri-facebook-circle-fill text-2xl cursor-pointer hover:scale-110 transition-transform"></i>
@@ -81,7 +81,7 @@ const SideBar = () => {
 const Navbar = () => {
     return (
         <>
-            <header className="relative w-screen font-body mx-auto">
+            <header className="relative font-body">
                 <TopBar />
                 <MainNav />
             </header>

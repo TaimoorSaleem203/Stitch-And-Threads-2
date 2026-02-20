@@ -2,7 +2,7 @@ import LandImg from "../assets/LandPageImg.png"
 
 const LandPage = () => {
   return (
-    <main className='w-full py-16 p-6 md:p-8 lg:p-12 bg-secondary'>
+    <main className='w-full py-16 p-6 md:p-8 lg:p-12 bg-secondary' id={`home`}>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 gap-12 lg:gap-14 lg:grid-cols-2 justify-center">
         <div className="flex flex-col gap-8 mx-auto items-center justify-center">

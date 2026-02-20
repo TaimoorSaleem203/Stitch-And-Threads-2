@@ -13,18 +13,18 @@ const App = () => {
   return (
     <>
 
-    <div className="overflow-hidden">
-      <Navbar />
-      <LandPage />
-      <AboutUs />
-      <Services />
-      <Portfolio />
-      <Quotes /> 
-      <ContactUs />
-      <FAQs />
-      <Subscription />
-      <Footer />
-    </div>
+      <section className="overflow-hidden scroll-smooth">
+        <Navbar />
+        <LandPage />
+        <AboutUs />
+        <Services />
+        <Portfolio />
+        <Quotes /> 
+        <ContactUs />
+        <FAQs />
+        <Subscription />
+        <Footer />
+      </section>
 
     </>
   )

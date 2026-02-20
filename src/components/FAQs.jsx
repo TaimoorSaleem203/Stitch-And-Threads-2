@@ -51,7 +51,7 @@ const FAQs = () => {
     return (
         <section className='mt-28'>
             <div className='max-w-7xl mx-auto flex flex-col gap-10 md:gap-0 md:flex-row items-center justify-between p-6 md:p-10 lg:p-12'>
-                <div className='w-full flex flex-col text-black justify-between h-[400px] md:h-[500px]'>
+                <div className='w-full flex flex-col text-black justify-between min-h-full md:h-[500px]'>
                     <div className='font-bold flex flex-col gap-5'>
                         <h1 className='font-heading text-4xl md:text-5xl lg:text-6xl'>FAQs</h1>
                         <p className='font-body font-medium max-w-xs'>are questions about our products, services, or building solutions? </p>

@@ -47,8 +47,8 @@ const Card = ({ icon, step, title, desc, color, btn }) => {
 const Portfolio = () => {
 
   return (
-    <section className="bg-white mt-36 overflow-x-hidden ">
-      <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
+    <section className="bg-white mt-36 overflow-hidden" id="portfolio">
+      <div className="max-w-7xl container mx-auto px-6 md:px-8 lg:px-12">
         <div className="text-center flex flex-col items-center justify-center gap-5">
           <h1 className="uppercase text-black font-bold text-4xl md:text-5xl lg:text-6xl font-heading">How it<span className="text-primary"> works</span></h1>
           <p className="text-side">A simple process built to deliver high-quality files without delays or confusion.</p>

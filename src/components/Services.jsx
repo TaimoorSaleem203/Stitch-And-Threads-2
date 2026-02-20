@@ -3,13 +3,13 @@ import ServiceImg from "../assets/ServiceImg.png"
 
 const Services = () => {
     return (
-        <section className='relative bg-secondary w-screen h-full mx-auto mt-36'>
+        <section className='relative bg-secondary w-full h-full mx-auto mt-36' id="services">
             <div className='w-full text-center flex flex-col gap-4 p-6 md:p-8 lg:p-12'>
                 <h1 className='uppercase text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mt-8'>explore our <span className='text-black'>Services</span></h1>
                 <p className='text-text/75 max-w-prose mx-auto'>Everything you need to turn your artwork into high-quality production files.</p>
                 <img className="hidden lg:block absolute max-w-[350px] w-full -translate-y-20 -translate-x-20 right-0 top-0" src={ServiceImg} alt="Service illustration" />
-            </div>
-
+            </div>  
+        
             <div className="max-w-7xl flex flex-col items-center mx-auto mt-20 px-6">
                 {["Embroidery Digitizing", "Vector Tracing", "Screen Separation", "Custom Patches", "DTF Gang Sheets", "Custom Apparels"].map((item, key) => {
                     return (
