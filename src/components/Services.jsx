@@ -19,12 +19,12 @@ const Services = () => {
                 {/* <img className="hidden lg:block absolute max-w-[350px] w-full -translate-y-20 -translate-x-20 right-0 top-0" src={ServiceImg} alt="Service illustration" /> */}
             </div>
 
-            <div className="max-w-7xl w-full flex md:flex-row flex-col gap-10 justify-center mx-auto mt-20">
+            <div className="max-w-7xl px-12 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center mx-auto mt-20">
                 {cards.map(({ badge, title, desc, color }, indx) => {
                     return (
                         <div key={indx} className="group flex flex-col items-center transition-transform ease-in-out duration-300 hover:-translate-y-2">
 
-                            <div className="overflow-hidden max-w-xs w-full mx-auto rounded-lg">
+                            <div className="overflow-hidden max-w-xs w-full mx-auto rounded-t-lg">
                                 <img
                                     src={badge}
                                     className="transition-transform duration-700 group-hover:scale-110 group-hover:rotate-2"
@@ -32,12 +32,12 @@ const Services = () => {
                                 />
                             </div>
 
-                            <div className={`flex flex-col gap-2 max-w-xs min-h-44 ${color} p-6 rounded-lg`}>
+                            <div className={`flex flex-1 flex-col gap-2 max-w-xs ${color} p-6 rounded-b-lg`}>
                                 <div className="flex items-center justify-between">
                                     <h1 className="font-heading text-xl text-white uppercase font-bold">{title}</h1>
-                                    <button className="bg-white rounded-full flex items-center justify-center w-7 h-7 p-2 cursor-pointer active:scale-95"><i className="ri-arrow-right-line text-sm font-bold text-primary"></i></button>
+                                    <button className="bg-white flex-shrink-0 rounded-full flex items-center justify-center w-7 h-7 p-2 cursor-pointer active:scale-95"><i className="ri-arrow-right-line text-sm font-bold text-primary"></i></button>
                                 </div>
-                                <p className="text-white/50 text-sm md:text-md font-body">{desc}</p>
+                                <p className="text-white/80 text-sm md:text-md font-body">{desc}</p>
                             </div>
                         </div>
 
@@ -45,8 +45,10 @@ const Services = () => {
                 })}
             </div>
 
-            <div>
-
+            <div className="flex items-center gap-2 justify-center text-sm md:text-md lg:text-lg mt-10">
+                <button><i className="ri-circle-fill text-primary"></i></button>
+                <button><i className="ri-circle-fill text-primary/60"></i></button>
+                <button><i className="ri-circle-fill text-primary/60"></i></button>
             </div>
 
         </section>

@@ -22,7 +22,7 @@ const Header = () => {
           return(
             <div>
               <h1 className="text-text font-bold text-2xl font-heading uppercase">{item.title}</h1>
-              <div className="flex mt-1 max-w-lg w-full justify-between">
+              <div className="flex flex-1 mt-1 max-w-lg w-full justify-between">
                 <h6 className="font-body max-w-xs md:max-w-lg">{item.desc}</h6>
                 <p className="font-bold">{item.percent}</p>
               </div>
@@ -43,9 +43,9 @@ const AboutUs = () => {
       <section className="mt-36 w-full max-w-7xl h-full mx-auto px-6 md:px-8 lg:px-12 grid grid-cols-1 gap-12 lg:grid-cols-2 md:gap-5 items-center">
         <Header />
 
-        <div className="flex flex-col max-w-xl items-center gap-5">
-          <img src={badge1} alt="badge1" />
-          <img src={badge2} alt="badge2" />
+        <div className="flex flex-col overflow-hidden items-center gap-5 group">
+          <img src={badge1} alt="badge1" className="w-full h-full object-cover mx-auto" />
+          <img src={badge2} alt="badge2" className="w-full h-full object-cover mx-auto"/>
         </div>
 
       </section>

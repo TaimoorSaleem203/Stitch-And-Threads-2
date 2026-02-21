@@ -8,6 +8,7 @@ import ContactUs from "./components/ContactUs.jsx"
 import FAQs from "./components/FAQs.jsx"
 import Subscription from "./components/Subscription.jsx"
 import Footer from "./components/Footer.jsx"
+import MarketBanner from "./components/MarketBanner.jsx"
 
 const App = () => {
   return (
@@ -18,10 +19,11 @@ const App = () => {
         <LandPage />
         <AboutUs />
         <Services />
+        <MarketBanner />
         <Portfolio />
         <Quotes /> 
-        <ContactUs />
-        <FAQs />
+        {/* <ContactUs /> */}
+        {/* <FAQs /> */}
         <Subscription />
         <Footer />
       </section>
