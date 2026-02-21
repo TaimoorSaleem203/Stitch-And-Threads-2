@@ -10,7 +10,7 @@ const Header = () => {
   ]
   
   return (
-    <section className='min-w-full mx-auto grid grid-cols-1 mt-36 justify-between' id="about">
+    <section className='w-full mx-auto grid grid-cols-1 justify-between' id="about">
       <div className='flex flex-col gap-8 items-start'>
         <h1 className='font-heading uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-primary'>What is
           Embroidery <span className='text-black'>Digitizing?</span></h1>
@@ -40,12 +40,12 @@ const Header = () => {
 
 const AboutUs = () => {
   return (
-      <section className="w-full max-w-7xl max-h-full mx-auto px-6 md:px-8 lg:px-12 grid grid-cols-1 gap-12 lg:grid-cols-2 md:gap-5 items-center">
+      <section className="mt-36 w-full max-w-7xl h-full mx-auto px-6 md:px-8 lg:px-12 grid grid-cols-1 gap-12 lg:grid-cols-2 md:gap-5 items-center">
         <Header />
 
-        <div className="flex flex-col gap-5 items-center max-w-xl w-full">
-          <img src={badge1} alt="" />
-          <img src={badge2} alt="" />
+        <div className="flex flex-col max-w-xl items-center gap-5">
+          <img src={badge1} alt="badge1" />
+          <img src={badge2} alt="badge2" />
         </div>
 
       </section>

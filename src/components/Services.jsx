@@ -1,37 +1,39 @@
 
-import ServiceImg from "../assets/ServiceImg.png"
+import Img1 from "../assets/ServiceImg1.png"
+import Img2 from "../assets/ServiceImg2.png"
+import Img3 from "../assets/ServiceImg3.png"
 
 const Services = () => {
+
+    const cards = [
+        {"badge":Img1,"title":"Left Chest Digitizing","desc":"Optimized for small logos and branding, perfect for polos, shirts, and uniforms. Clean stitches and balanced density ensure clarity even at smaller sizes.","color":"bg-[#2C2C2C]"},
+        {"badge":Img2, "title":"Jacket Back Digitizing","desc":"Designed for large-scale embroidery with detailed coverage. Ideal for jackets and outerwear where bold impact and precision matter.","color":"bg-text"},
+        {"badge":Img3, "title":"3D Puff Digitizing","desc":"Specialized digitizing for raised embroidery using foam, giving your design depth and a bold, premium look.","color":"bg-primary"}
+    ]
+
     return (
-        <section className='relative bg-secondary w-full h-full mx-auto mt-36' id="services">
-            <div className='w-full text-center flex flex-col gap-4 p-6 md:p-8 lg:p-12'>
-                <h1 className='uppercase text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mt-8'>explore our <span className='text-black'>Services</span></h1>
-                <p className='text-text/75 max-w-prose mx-auto'>Everything you need to turn your artwork into high-quality production files.</p>
-                <img className="hidden lg:block absolute max-w-[350px] w-full -translate-y-20 -translate-x-20 right-0 top-0" src={ServiceImg} alt="Service illustration" />
+        <section className='relative bg-secondary w-full h-full p-6 md:p-8 lg:p-12 mx-auto mt-36' id="services">
+            <div className='w-full text-center flex flex-col gap-4'>
+                <h1 className='uppercase text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mt-8'>Our Digitizing <span className='text-black'>Services</span></h1>
+                <p className='text-text/75 max-w-prose sm:text-md md:text-lg mx-auto'>Each digitizing style is crafted to match placement, fabric type, and design complexity.</p>
+                {/* <img className="hidden lg:block absolute max-w-[350px] w-full -translate-y-20 -translate-x-20 right-0 top-0" src={ServiceImg} alt="Service illustration" /> */}
             </div>  
         
-            <div className="max-w-7xl flex flex-col items-center mx-auto mt-20 px-6">
-                {["Embroidery Digitizing", "Vector Tracing", "Screen Separation", "Custom Patches", "DTF Gang Sheets", "Custom Apparels"].map((item, key) => {
+            <div className="max-w-7xl w-full flex md:flex-row flex-col justify-center gap-8 mx-auto mt-20 px-6">
+                {cards.map(({badge,title,desc,color})=>{
                     return (
-                        <div
-                            key={key}
-                            className={`group transition-all duration-500 ease-in-out w-full flex flex-row items-center justify-between border-b border-text/20 py-10 md:py-14 px-4 hover:bg-primary/5 ${key === 0 && "border-t"}`}
-                        >
-                            <div className="flex items-center gap-4 md:gap-8">
-                                <span className="hidden sm:block font-heading text-primary/40 font-bold text-xl">
-                                    0{key + 1}
-                                </span>
-                                <h1 className="uppercase text-black font-heading font-bold text-2xl sm:text-xl md:text-4xl lg:text-5xl transition-transform duration-500 group-hover:translate-x-4">
-                                    {item}
-                                </h1>
+                        <div className="flex flex-col items-center">
+                            <img src={badge} className="max-w-xs w-full h-full object-cover mx-auto" alt="" />
+
+                            <div className={`flex flex-col gap-2 max-w-xs w-full h-full ${color} p-6 rounded-lg`}>
+                                <div className="flex items-center justify-between w-full">
+                                    <h1 className="font-heading text-xl text-white uppercase font-bold">{title}</h1>
+                                    <button className="bg-white rounded-full flex items-center justify-center w-6 h-6 p-2"><i className="ri-arrow-right-line text-sm text-primary"></i></button>
+                                </div>
+                                <p className="text-white/50 text-sm md:text-md font-body">{desc}</p>
                             </div>
-                            <button
-                                className="transition-all duration-500 group-hover:-translate-x-4"
-                                aria-label={item}
-                            >
-                                <i className="ri-arrow-right-down-long-line text-2xl md:text-4xl lg:text-5xl text-text/40 group-hover:text-primary group-hover:rotate-[-45deg] transition-all duration-500 inline-block"></i>
-                            </button>
                         </div>
+
                     )
                 })}
             </div>
