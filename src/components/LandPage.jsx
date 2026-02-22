@@ -4,15 +4,15 @@ import LandImg4 from "../assets/LandPageImg4.png"
 
 const LandPage = () => {
   return (
-    <main className='w-full py-16 p-6 md:p-8 lg:p-12 bg-secondary' id={`home`}>
+    <main className='w-full py-16 bg-secondary' id={`home`}>
 
-      <div className="text-center max-w-7xl mx-auto grid grid-cols-1 gap-12 lg:gap-14 lg:grid-cols-2 justify-center">
+      <div className="text-center layout-container grid grid-cols-1 gap-12 lg:gap-14 lg:grid-cols-2 justify-center">
         <div className="flex flex-col gap-5 mx-auto items-center justify-center">
-          <h1 className="text-primary uppercase tracking-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-semibold">Embroider<span className="text-black"> Digitizing</span></h1>
-          <p className="max-w-md font-body font-semibold md:text-md md:text-lg text-text leading-normal">We convert your artwork into clean, stitch-ready embroidery files with accuracy, balance, and flawless detailing.</p>
+          <h1 className="text-primary uppercase text-4xl md:text-5xl lg:text-6xl font-heading font-semibold">Embroider<span className="text-black"> Digitizing</span></h1>
+          <p className="max-w-md font-body font-semibold sm:text-md md:text-lg text-text leading-relaxed">We convert your artwork into clean, stitch-ready embroidery files with accuracy, balance, and flawless detailing.</p>
 
           <div className="mt-5 grid items-center gap-5 grid-cols-2">
-            <img src={LandImg2} className="rounded-lg max-w-md w-full h-full object-cover mx-auto" alt="" />
+            <img src={LandImg2} className="rounded-lg w-full h-full object-cover mx-auto" alt="" />
             <div className="flex flex-col gap-5">
               <img src={LandImg3} className="w-full h-full mx-auto object-cover" alt="" />
               <img src={LandImg4} className="w-full h-full mx-auto object-cover" alt="" />

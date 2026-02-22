@@ -12,14 +12,14 @@ const Services = () => {
     ]
 
     return (
-        <section className='relative bg-secondary w-full h-full p-6 md:p-8 lg:p-12 mx-auto mt-36' id="services">
-            <div className='w-full text-center flex flex-col gap-4'>
+        <section className='relative bg-secondary section-padding pt-8 pb-8 mt-36' id="services">
+            <div className='w-full mx-auto text-center flex flex-col gap-4'>
                 <h1 className='uppercase text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mt-8'>Our Digitizing <span className='text-black'>Services</span></h1>
                 <p className='text-text/75 max-w-prose sm:text-md md:text-lg mx-auto'>Each digitizing style is crafted to match placement, fabric type, and design complexity.</p>
                 {/* <img className="hidden lg:block absolute max-w-[350px] w-full -translate-y-20 -translate-x-20 right-0 top-0" src={ServiceImg} alt="Service illustration" /> */}
             </div>
 
-            <div className="max-w-7xl px-12 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center mx-auto mt-20">
+            <div className="layout-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-0 justify-center mt-20">
                 {cards.map(({ badge, title, desc, color }, indx) => {
                     return (
                         <div key={indx} className="group flex flex-col items-center transition-transform ease-in-out duration-300 hover:-translate-y-2">

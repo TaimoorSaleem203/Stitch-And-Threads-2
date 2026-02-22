@@ -9,6 +9,7 @@ import FAQs from "./components/FAQs.jsx"
 import Subscription from "./components/Subscription.jsx"
 import Footer from "./components/Footer.jsx"
 import MarketBanner from "./components/MarketBanner.jsx"
+import Badges from "./components/Badges.jsx"
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <MarketBanner />
         <Portfolio />
         <Quotes /> 
+        <Badges />
         {/* <ContactUs /> */}
         {/* <FAQs /> */}
         <Subscription />

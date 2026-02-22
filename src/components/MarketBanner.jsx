@@ -14,12 +14,12 @@ const MarketBanner = () => {
 
     return (
         <>
-            <section className="mt-36 layout-container md:gap-5 items-center">
-                <div className='flex flex-col gap-10 items-center'>
+            <section className="mt-36 layout-container">
+                <div className='section-padding flex flex-col gap-10 items-center'>
                     <h1 className='font-heading uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-primary'>
                         WHY OUR DIGITIZING <span className='text-black'>STANDS OUT</span></h1>
                     
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center mx-auto lg:gap-5 md:gap-8 gap-10 mt-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center mx-auto lg:gap-12 gap-10 mt-12">
                         {cards.map(({icon,title,desc})=>{
                             return (
                                 <div className="flex flex-col transition-all duration-300 ease-in-out rounded-xl items-start gap-8">

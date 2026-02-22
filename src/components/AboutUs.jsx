@@ -14,7 +14,7 @@ const Header = () => {
       <div className='flex flex-col gap-8 items-start'>
         <h1 className='font-heading uppercase text-4xl md:text-5xl lg:text-6xl font-bold text-primary'>What is
           Embroidery <span className='text-black'>Digitizing?</span></h1>
-        <p className="text-side max-w-lg leading-relaxed text-lg font-medium">Embroidery digitizing is the process of transforming logos or artwork into a digital stitch file that embroidery machines can read. At Stitch N Threads, we focus on stitch accuracy, smooth edges, and proper density so your design looks sharp on any fabric.</p>
+        <p className="text-side max-w-lg leading-relaxed text-md lg:text-lg font-medium">Embroidery digitizing is the process of transforming logos or artwork into a digital stitch file that embroidery machines can read. At Stitch N Threads, we focus on stitch accuracy, smooth edges, and proper density so your design looks sharp on any fabric.</p>
       </div>
 
       <div className="flex flex-col gap-8 mt-10">
@@ -40,7 +40,7 @@ const Header = () => {
 
 const AboutUs = () => {
   return (
-      <section className="mt-36 w-full max-w-7xl h-full mx-auto px-6 md:px-8 lg:px-12 grid grid-cols-1 gap-12 lg:grid-cols-2 md:gap-5 items-center">
+      <section className="mt-36 layout-container grid grid-cols-1 gap-10 md:gap-5 lg:grid-cols-2 items-center">
         <Header />
 
         <div className="flex flex-col overflow-hidden items-center gap-5 group">

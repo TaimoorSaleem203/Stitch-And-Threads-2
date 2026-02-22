@@ -1,8 +1,8 @@
 
 const Quotes = () => {
   return (
-    <section className='mt-36 bg-white layout-container' id="get%20a%20quote">
-      <div className='max-w-4xl mx-auto flex flex-col gap-10 items-center justify-center text-center'>
+    <section className='mt-36 bg-white layout-container flex items-center justify-center text-center' id="get%20a%20quote">
+      <div className='max-w-4xl mx-auto flex flex-col gap-10'>
         
         <div className="opacity-20 transition-transform duration-700 hover:rotate-12">
           <i className="ri-double-quotes-l text-6xl text-primary"></i>
