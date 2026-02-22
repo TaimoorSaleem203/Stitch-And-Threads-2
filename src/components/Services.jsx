@@ -19,7 +19,7 @@ const Services = () => {
                 {/* <img className="hidden lg:block absolute max-w-[350px] w-full -translate-y-20 -translate-x-20 right-0 top-0" src={ServiceImg} alt="Service illustration" /> */}
             </div>
 
-            <div className="layout-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-0 justify-center mt-20">
+            <div className="layout-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
                 {cards.map(({ badge, title, desc, color }, indx) => {
                     return (
                         <div key={indx} className="group flex flex-col items-center transition-transform ease-in-out duration-300 hover:-translate-y-2">
@@ -32,7 +32,7 @@ const Services = () => {
                                 />
                             </div>
 
-                            <div className={`flex flex-1 flex-col gap-2 max-w-xs ${color} p-6 rounded-b-lg`}>
+                            <div className={`flex flex-col gap-2 max-w-xs ${color} p-6 rounded-b-lg`}>
                                 <div className="flex items-center justify-between">
                                     <h1 className="font-heading text-xl text-white uppercase font-bold">{title}</h1>
                                     <button className="bg-white flex-shrink-0 rounded-full flex items-center justify-center w-7 h-7 p-2 cursor-pointer active:scale-95"><i className="ri-arrow-right-line text-sm font-bold text-primary"></i></button>
